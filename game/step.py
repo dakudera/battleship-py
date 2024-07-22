@@ -1,8 +1,10 @@
 import abc
 import random
-from board import rows, cols
-from shoot import Shoot, PlayerShoot, PcShoot
-from config import StartUpGameConfig, print_boards
+from . import (
+    rows, cols,
+    Shoot, PlayerShoot, PcShoot,
+    StartUpGameConfig, print_boards
+)
 
 
 def validate_input(row: int, col: int):

@@ -1,11 +1,7 @@
-import random
-from board import (
-    Board, BorderPrinter, cols, rows,
-    RandomSetBoat, Cell, ships
+from game import (
+    StartUpGameConfig, print_boards,
+    Step, PlayerStep, PcStep
 )
-from ships import Referi, Player
-from config import StartUpGameConfig, print_boards
-from step import Step, PlayerStep, PcStep
 
 
 def check_accounts(config: StartUpGameConfig):

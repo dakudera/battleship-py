@@ -1,6 +1,5 @@
 import abc
-from board import Board, Cell
-from ships import Player
+from . import Board, Cell, Player
 
 
 class Shoot(abc.ABC):

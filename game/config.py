@@ -1,8 +1,8 @@
-from board import (
+from . import (
     Board, cols, rows,
-    RandomSetBoat, Cell, ships, BorderPrinter
+    RandomSetBoat, Cell, ships,
+    BorderPrinter, Referi
 )
-from ships import Referi
 
 
 class StartUpGameConfig:

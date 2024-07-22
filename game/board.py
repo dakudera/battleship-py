@@ -1,6 +1,6 @@
 
 import random
-from ships import Player, Referi, Ship
+from . import Player, Referi, Ship
 
 rows = 10
 cols = 10
