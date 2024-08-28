@@ -37,5 +37,5 @@ class StartUpGameConfig:
 def print_boards(config: StartUpGameConfig):
     player_printer = BorderPrinter(board=config.player, player_name="PLAYER")
     player_printer.print()
-    pc_printer = BorderPrinter(board=config.pc, player_name="PC")
-    pc_printer.print()
+    # pc_printer = BorderPrinter(board=config.pc, player_name="PC")
+    # pc_printer.print()

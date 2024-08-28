@@ -20,16 +20,16 @@ class PlayerShoot(Shoot):
 
     def shoot(self, row, col):
         cell: Cell = self.pc.board[row-1][col-1]
+        shooted_board_cell: Cell = self.player.shooted_board[row-1][col-1]
         if cell.value == "1":
-            shooted_board_cell: Cell = self.player.shooted_board[row-1][col-1]
             shooted_board_cell.value = "H"
             shooted_board_cell.is_shoted = True
             cell.is_shoted = True
             cell.value = "*"
             cell.ship.hit(player=Player.PLAYER)
         else:
-            cell.value = "*"
-            cell.is_shoted = True
+            shooted_board_cell.value = "*"
+            shooted_board_cell.is_shoted = True
 
 
 class PcShoot(Shoot):
